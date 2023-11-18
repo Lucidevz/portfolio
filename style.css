@@ -36,7 +36,7 @@ nav ul li a{
     font-weight: bold;
     text-transform: capitalize;
 }
-nav ul li a:hover{
+nav a:hover{
     color:greenyellow;
     transition: 0.25s;
 }
