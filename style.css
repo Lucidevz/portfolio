@@ -8,7 +8,7 @@
     height: 100vh;
     width: 100%;
     background-image: url(/img/HomeBackground.png);
-    background-color: cover;
+    background-size: cover;
     background-position: center;
 }
 nav{
