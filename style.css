@@ -4,10 +4,12 @@
     font-family: 'Roboto';
     box-sizing: border-box
 }
-.Start{
+.start{
     height: 100vh;
     width: 100%;
     background-image: url(../img/HomeBackground.png);
+    background-color: cover;
+    background-position: center;
 }
 nav{
     display: flex;
@@ -49,4 +51,20 @@ nav ul li a:hover{
 }
 .btn:hover{
     transform: scale((1.15));
+}
+.content{
+    position: absolute;
+    top: 50%;
+    left:8%;
+    transform: translate(-50%);
+}
+h1{
+    color:black;
+    margin: 20px 0px 20px;
+    font-size: 75px;
+}
+h4{
+    color: black;
+    font-size: 25px;
+    margin-bottom: 50px;
 }
