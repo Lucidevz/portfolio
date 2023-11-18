@@ -51,7 +51,7 @@ nav ul li a:hover{
     transition: transform 0.25s;
 }
 .btn:hover{
-    transform: scale((1.15));
+    transform: scale(1.15);
 }
 .content{
     position: absolute;
