@@ -135,4 +135,9 @@ h4{
     width: 335px;
     padding: 20px 35px;
     position: relative;
+    
+}
+.card img{
+    height: 100px;
+    width: 100px;
 }
