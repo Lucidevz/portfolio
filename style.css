@@ -111,3 +111,28 @@ h4{
     font-size: 18px;
     margin-bottom: 45px;
 }
+
+.skills{
+    background-color: #ffe7ca;
+    width: 100%;
+    padding: 100px 0px;
+}
+.title h2{
+    color:black;
+    font-size: 75px;
+    width: 1130px;
+    margin: 30px auto;
+    text-align: center;
+}
+.programming{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+}
+.card{
+    height: 365px;
+    width: 335px;
+    padding: 20px 35px;
+    position: relative;
+}
