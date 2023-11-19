@@ -20,10 +20,9 @@ nav{
     padding-right: 8%;
 }
 .logo{
-    color: #eee7e1;
+    color: #ffca6f;
     font-size: 36px;
     letter-spacing: 1px;
-    cursor: pointer;
 }
 nav ul li{
     list-style-type: none;
@@ -31,13 +30,13 @@ nav ul li{
     padding: 10px 25px;
 }
 nav ul li a{
-    color:#eee7e1;
+    color:#ffe7ca;
     text-decoration: none;
     font-weight: bold;
     text-transform: capitalize;
 }
 nav ul li a:hover{
-    color:#ffca6f;
+    color:#15e26a;
     transition: 0.25s;
 }
 .btn{
@@ -51,7 +50,7 @@ nav ul li a:hover{
     transition: transform 0.25s;
 }
 .btn:hover{
-    background-color: greenyellow;
+    background-color: #15e26a;
     transform: scale(1.1);
 }
 .content{
@@ -61,15 +60,59 @@ nav ul li a:hover{
     transform: translateY(-50%);
 }
 h1{
-    color:black;
-    margin: 20px 0px 20px;
-    font-size: 75px;
+    color: #ffe7ca;
+    margin: 20px 0px 10px;
+    font-size: 85px;
 }
 h4{
-    color: black;
+    color: #ffca6f;
     font-size: 25px;
     margin-bottom: 50px;
 }
+
+.projects{
+    background: #ffe7ca;
+    width: 100%;
+    padding: 100px, 0px;
+}
+.projectstitle h2{
+    color:black;
+    font-size: 80px;
+    width: 1130px;
+    margin: 30px auto;
+    text-align: center;
+}
+.firstrow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 800px;
+}
+.project{
+    height: 560px;
+    width: 414px;
+    padding: 10px 35px;
+    background-color: #fff9f3;
+    border-radius: 20px;
+    margin: 15px;
+    position: relative;
+    text-align: center;
+}
+.project:hover{
+    transition: 0.25s;
+    transform: scale(1.05);
+}
+.h5{
+    color: black;
+    font-size: 24px;
+}
+.projectimg{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    align-self: center;
+}
+
 
 .about{
     width: 100%;
@@ -93,7 +136,7 @@ h4{
 }
 .about-text h2{
     color: black;
-    font-size: 75px;
+    font-size: 80px;
     text-transform: capitalize;
     margin-bottom: 20px;
 }
@@ -119,7 +162,7 @@ h4{
 }
 .title h2{
     color:black;
-    font-size: 75px;
+    font-size: 80px;
     width: 1130px;
     margin: 30px auto;
     text-align: center;
@@ -182,6 +225,9 @@ h5{
     align-items: center;
     flex-direction: column;
     justify-content: center;
+}
+h2{
+    font-size: 80px;
 }
 
 footer{
