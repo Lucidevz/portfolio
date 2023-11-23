@@ -1,9 +1,14 @@
 *{
     padding: 0;
     margin: 0;
-    font-family: 'Roboto';
+    font-family: 'Roboto', 'sans serif';
     box-sizing: border-box
 }
+body{
+    background: #ffe7ca;
+
+} 
+
 .start{
     height: 100vh;
     width: 100%;
@@ -16,16 +21,16 @@ nav{
     align-items: center;
     justify-content: space-between;
     padding-top: 45px;
-    padding-left: 8%;
-    padding-right: 8%;
+    padding-left: 15%;
+    padding-right: 15%;
 }
 .logo{
     color: #ffca6f;
-    font-size: 36px;
+    font-size: 44px;
     letter-spacing: 1px;
 }
 nav ul li{
-    list-style-type: none;
+    list-style: none;
     display: inline-block;
     padding: 10px 25px;
 }
@@ -34,40 +39,54 @@ nav ul li a{
     text-decoration: none;
     font-weight: bold;
     text-transform: capitalize;
+    font-size: 22px;
+    position: relative;
 }
-nav ul li a:hover{
-    color:#15e26a;
+nav ul li a::after{
+    content:'';
+    width: 0;
+    height:  3px;
+    background-color: #ffca6f;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
     transition: 0.25s;
 }
-.btn{
-    background-color: #ffca6f;
-    color: black;
-    text-decoration: none;
-    border: 2px solid transparent;
-    font-weight: bold;
-    padding: 10px 25px;
-    border-radius: 30px;
-    transition: transform 0.25s;
+nav ul li a:hover::after{
+    width: 100%;
 }
-.btn:hover{
-    background-color: #15e26a;
-    transform: scale(1.1);
+nav ul li a:hover{
+    color:#ffca6f;
+    transition: 0.25s;
 }
+
 .content{
     position: absolute;
+    margin: auto;
+    width: 60%;
     top: 50%;
-    left: 8%;
+    left: 20%;
+    right: 20%;
     transform: translateY(-50%);
 }
 h1{
     color: #ffe7ca;
     margin: 20px 0px 10px;
     font-size: 85px;
+    margin-bottom: 10px;
+    text-align: center;
 }
 h4{
+    text-align: center;
     color: #ffca6f;
     font-size: 25px;
-    margin-bottom: 50px;
+    margin-bottom: 25px;
+}
+p{
+    text-align: center;
+    color: #ffca6f;
+    font-size: 20px;
+    margin-bottom: 25px;
 }
 
 .projects{
@@ -118,6 +137,7 @@ h4{
     width: 100%;
     padding: 100px 0px;
     background-color: #f5c49c;
+    align-items: center;
 }
 .about img{
     height: auto;
@@ -135,12 +155,14 @@ h4{
     justify-content: space-around;
 }
 .about-text h2{
+    text-align: center;
     color: black;
     font-size: 80px;
     text-transform: capitalize;
     margin-bottom: 20px;
 }
 .about-text h5{
+    text-align: center;
     color: black;
     letter-spacing: 2px;
     font-size: 22px;
@@ -148,6 +170,7 @@ h4{
     text-transform: capitalize;
 }
 .about-text p{
+    text-align: center;
     color:black;
     letter-spacing: 1px;
     line-height: 28px;
