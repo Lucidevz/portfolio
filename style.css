@@ -4,9 +4,12 @@
     font-family: 'Roboto', 'sans serif';
     box-sizing: border-box
 }
-body{
-    background: #ffe7ca;
+html{
+    scroll-behavior: smooth;
+}
 
+body{
+    background: #457b9d;
 } 
 
 .start{
@@ -20,12 +23,12 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-top: 45px;
+    padding-top: 2%;
     padding-left: 15%;
     padding-right: 15%;
 }
 .logo{
-    color: #ffca6f;
+    color: #f1faee;
     font-size: 44px;
     letter-spacing: 1px;
 }
@@ -35,7 +38,7 @@ nav ul li{
     padding: 10px 25px;
 }
 nav ul li a{
-    color:#ffe7ca;
+    color:#f1faee;
     text-decoration: none;
     font-weight: bold;
     text-transform: capitalize;
@@ -46,7 +49,7 @@ nav ul li a::after{
     content:'';
     width: 0;
     height:  3px;
-    background-color: #ffca6f;
+    background-color: #e63946;
     position: absolute;
     left: 0;
     bottom: -5px;
@@ -56,12 +59,13 @@ nav ul li a:hover::after{
     width: 100%;
 }
 nav ul li a:hover{
-    color:#ffca6f;
+    color:#e63946;
     transition: 0.25s;
 }
 
 .content{
     position: absolute;
+    justify-content: center;
     margin: auto;
     width: 60%;
     top: 50%;
@@ -69,85 +73,82 @@ nav ul li a:hover{
     right: 20%;
     transform: translateY(-50%);
 }
-h1{
-    color: #ffe7ca;
+.content h1{
+    color: #f1faee;
     margin: 20px 0px 10px;
     font-size: 85px;
     margin-bottom: 10px;
     text-align: center;
 }
-h4{
+.content h4{
     text-align: center;
-    color: #ffca6f;
+    color: #f1faee;
     font-size: 25px;
     margin-bottom: 25px;
 }
-p{
+.content p{
     text-align: center;
-    color: #ffca6f;
+    color: #f1faee;
     font-size: 20px;
+    line-height: 28px;
     margin-bottom: 25px;
 }
 
-.projects{
-    background: #ffe7ca;
+/*--------Projects--------*/
+
+.projects-section{
+    background: #457b9d;
     width: 100%;
-    padding: 100px, 0px;
+    padding: 50px, 0px;
 }
-.projectstitle h2{
-    color:black;
+.projects-title{
+    color: #f1faee;
     font-size: 80px;
-    width: 1130px;
-    margin: 30px auto;
+    margin: auto;
+    margin-top: 100px;
     text-align: center;
 }
-.firstrow{
+.first-row{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 800px;
+    padding-bottom: 150px;
 }
 .project{
-    height: 560px;
-    width: 414px;
-    padding: 10px 35px;
-    background-color: #fff9f3;
-    border-radius: 20px;
-    margin: 15px;
+    border-radius: 15px;
     position: relative;
-    text-align: center;
+    overflow: hidden;
 }
-.project:hover{
-    transition: 0.25s;
-    transform: scale(1.05);
-}
-.h5{
-    color: black;
-    font-size: 24px;
-}
-.projectimg{
-    display: flex;
-    justify-content: center;
-    position: relative;
-    align-self: center;
-}
-
-
-.about{
+.first-row img{
     width: 100%;
-    padding: 100px 0px;
-    background-color: #f5c49c;
+    border-radius: 10px;
+    display: block;
+    transition: 0.25s;
+}
+
+.first-row img:hover{
+    transform:scale(1.15);
+}
+.project:hover .layer{
+    height: 100%;
+}
+
+.about-section{
+    width: 100%;
+    height: 550px;
+    padding: 75px 0px;
+    background-color: #1d3557;
     align-items: center;
 }
-.about img{
-    height: auto;
-    width: 430px;
-}
 .about-text{
-    width: 550px;
+    width: 800px;
 }
 .main{
-    width: 1130px;
+    width: 80%;
     max-width: 95%;
     margin: 0 auto;
     display: flex;
@@ -156,14 +157,14 @@ p{
 }
 .about-text h2{
     text-align: center;
-    color: black;
+    color: #f1faee;
     font-size: 80px;
     text-transform: capitalize;
     margin-bottom: 20px;
 }
 .about-text h5{
     text-align: center;
-    color: black;
+    color: #f1faee;
     letter-spacing: 2px;
     font-size: 22px;
     margin-bottom: 25px;
@@ -171,22 +172,21 @@ p{
 }
 .about-text p{
     text-align: center;
-    color:black;
+    color: #f1faee;
     letter-spacing: 1px;
     line-height: 28px;
     font-size: 18px;
     margin-bottom: 45px;
 }
 
-.skills{
-    background-color: #ffe7ca;
+.skills-section{
+    background-color: #457b9d;
     width: 100%;
     padding: 100px 0px;
 }
-.title h2{
-    color:black;
+.skills-section .title h2{
+    color: #f1faee;
     font-size: 80px;
-    width: 1130px;
     margin: 30px auto;
     text-align: center;
 }
@@ -198,7 +198,6 @@ p{
 }
 .skill{
     height: 150px;
-    width: 225px;
     padding: 15px 25px;
     margin: 15px;
     position: relative;
@@ -207,7 +206,7 @@ p{
 }
 
 h5{
-    color: black;
+    color: #f1faee;
     font-size: 23;
     margin-bottom: 15px;
     text-align: center;
@@ -220,7 +219,6 @@ h5{
 }
 .skill{
     height: 150px;
-    width: 225px;
     padding: 15px 25px;
     margin: 15px;
     position: relative;
@@ -234,30 +232,35 @@ h5{
     transition: 0.15s;
 }
 h5{
-    color: black;
+    color: #f1faee;
     font-size: 23;
     margin-bottom: 15px;
     text-align: center;
 }
 
-.contact{
+.contact-section{
     width: 100%;
-    height: 290px;
-    background: #f5c49c;
+    height: 400px;
+    background: #1d3557;
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
 }
-h2{
+.contact-section h2{
+    color: #f1faee;
     font-size: 80px;
+}
+.contact-section h5{
+    color: #f1faee;
+    font-size: 24px;
 }
 
 footer{
     position: relative;
     width: 100%;
     height: 150px;
-    background: #ffe7ca;
+    background: #457b9d;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -270,14 +273,281 @@ footer{
     display: flex;
     align-items: center;
 }
-.copyright{
+.end p{
+    text-align: center;
+    color: #f1faee;
+    font-size: 18px;
+}
+.copyright i {
     width: 10px;
     height: 10px;
     display: flex;
     align-items: center;
     justify-content: center;    
     margin: 22px 10px;
-    color:black;
+    color: #f1faee;
     text-decoration: none;
     font-size: 20px;
+}
+
+
+/*---------------css for small screens-------------*/
+
+.start i{
+    display: none;
+}
+
+@media only screen and (max-width: 600px){
+
+    .start{
+        height: 100vh;
+        width: 100%;
+        background-image: url(img/HomeBackgroundMobile.png);
+        background-size: cover;
+        background-position: center;
+    }
+    .start .logo{
+        font-size: 0px;
+    }
+    .content{
+        justify-content: center;
+        position: absolute;
+        width: 85%;
+        left: 5%;
+        right: 5%;
+        transform: translateY(-50%);
+    }
+    .content h1{
+        font-size: 44px;
+    }
+    .content h4{
+        font-size: 22px;
+
+    }
+    .content p{
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 25px;
+    }
+
+    .start i{
+        display: block;
+        font-size: 25px;
+    }
+
+    .start nav ul{
+        background: #e63946;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 45%;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.25s;
+    }
+
+    .start nav ul li{
+        display:block;
+        margin: 5px;
+    }
+
+    .start nav ul i{
+        color: #f1faee;
+        position: absolute;
+        top: 25px;
+        left: 30px;
+        cursor: pointer;
+    }
+    .start i{
+        color: #f1faee;
+        position: absolute;
+        top: 25px;
+        right: 35px;
+        cursor: pointer;
+    }
+
+    /* ----- Titles and Text ----- */
+
+    .projects-title{
+        top: 15px;
+        font-size: 44px;
+        text-align: center;
+    }
+    .about-text h2{
+        text-align: center;
+        font-size: 44px;
+    }
+    .about-text h5{
+        text-align: center;
+        letter-spacing: 0px;
+        font-size: 22px;
+        margin-bottom: 25px;
+    }
+    .about-text p{
+        text-align: center;
+        line-height: 22px;
+        font-size: 16px;
+    }
+    .skills-section .title h2{
+        color: #f1faee;
+        font-size: 44px;
+        text-align: center;
+        margin: 15px auto;
+    }
+    .contact-section h2{
+        color: #f1faee;
+        font-size: 44px;
+    }
+    .contact-section h5{
+        color: #f1faee;
+        font-size: 16px;
+    }
+
+    .end p{
+        text-align: center;
+        color: #f1faee;
+        font-size: 16px;
+    }
+    .copyright i {
+        width: 10px;
+        height: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;    
+        margin: 22px 10px;
+        color: #f1faee;
+        text-decoration: none;
+        font-size: 18px;
+    }
+
+    /* ----- Titles and Text : Hover effects ----- */
+
+    nav ul li a::after{
+        content:'';
+        width: 0;
+        height:  3px;
+        background-color: purple;
+        position: absolute;
+        left: 0;
+        bottom: -5px;
+        transition: 0.25s;
+    }
+    nav ul li a:hover::after{
+        width: 100%;
+    }
+    nav ul li a:hover{
+        color:purple;
+        transition: 0.25s;
+    }
+
+    /* ----- Projects Section ----- */
+
+    .first-row{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-gap: 40px;
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 150px;
+    }
+
+    /* ----- About Section ----- */
+
+    .about-section{
+        width: 100%;
+        height: 600px;
+        padding: 75px 0px;
+
+    }
+
+    /* ----- Skills Section ----- */
+
+    .skills-section{
+        width: 100%;
+        padding: 60px 0px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .programming{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100px;
+        width: 100%;
+    }
+    .programming .skill{
+        height: 100px;
+        width: 150px;
+        padding: 10px 10px;
+        margin: 10px;
+        position: relative;
+        overflow: hidden;
+        text-align: center;
+        align-items: center;
+    }
+    .programming .h5{
+        color: #f1faee;
+        font-size: 16;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+    .software{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100px;
+        width: 100%;
+    }
+    .software .skill{
+        height: 100px;
+        width: 150px;
+        padding: 10px 0px;
+        margin: 1px;
+        position: relative;
+        text-align: center;
+        align-items: center;
+    }
+    .skill img{
+        height: 45px;
+        width: 45px;
+    }
+    .skill img:hover{
+        transform: scale(1.1);
+        transition: 0.15s;
+    }
+    .software .h5{
+        color: #f1faee;
+        font-size: 16;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    /* ----- Contact Section ----- */
+
+    .contact-section{
+        width: 100%;
+        height: 220px;
+    }
+
+    /* ----- Footer / Copyrtight section ----- */
+
+    footer{
+        position: relative;
+        width: 100%;
+        height: 100px;
+        background: #457b9d;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .end{
+        position: absolute;
+        bottom: 25px;
+        display: flex;
+        align-items: center;
+    }
 }
