@@ -36,7 +36,7 @@
         <div class="Text">
             <h1>BOIDS SIMULATION</h1>
             <div class="line"></div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p>Boids simulation was a solo project about demonstrating steering and flocking behaviours within a set of AI agents. I've expanded on the basic principles of boid movement to create more advanced behaviour, and also included optimisation techniques such as multi-threading and an oct-tree. This project was made in Unreal Engine 5 with C++.</p>
         </div>
         <div class = "Video">
             <img src = "img\ImagePlaceholder.png">
@@ -48,13 +48,13 @@
             <img src = "img\ImagePlaceholder.png">
         </div>
         <div class="Text">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p>I used all the standard principles of boid behaviour, developed by Craig Reynolds, to create a 3D artifitial life simulation. 'Alignment', 'Cohesion', and 'Seperation' are all used to allow a large amount of objects (my project uses space ships) to move together as a flock. I've expanded upon this by adding features such as teams, which makes all boids flock within seperate groups, 2 types of containment behaviour, and the option to visualise some of the calculations being performed, such as the boids direction of movement.</p>
         </div>
     </section>
 
     <section class="SecondSection">
         <div class="Text">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p>I also looked into ways of increasing performance of the simulation, and added 3 optimisation techniques: Intermitent thinking, multi-threading and an oct-tree. For multi-threading, I had to find out how to use Unreal Engines built in C++ class for creating and handling threads. As actors cannot be modified outside of the main game thread, I came up with an approach to perform all the calculations for individual groups of boids within seperate threads. I then applied the found results inside of the main game thread, where it was safe to do so, once all of the other threads had finished.</p>
         </div>
         <div class = "Image">
             <img src = "img\ImagePlaceholder.png">
@@ -66,7 +66,7 @@
             <img src = "img\ImagePlaceholder.png">
         </div>
         <div class="Text">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p>For the oct-tree, I made a custom oct-tree class in C++ that allowed me to split up 3D space depending on how many boids were in a given area. I researched into the theory behind different types of spatial-partitioning used within games and simulations, and ended up finding the oct-tree to be the best choice for my needs. I noticed a large performance improvement after implementing this feature, and also added the option to visualise it, as shown in the photo opposite.</p>
         </div>
     </section>
 
