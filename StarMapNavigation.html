@@ -45,7 +45,7 @@
 
     <section class="FirstSection">
         <div class = "Image">
-            <img src = "img\ImagePlaceholder.png">
+            <img src = "img\StarMapNavigationImage1.png">
         </div>
         <div class="Text">
             <p>I implemented procedural generation to create a small galaxy, with the option for 2 different formation shapes. I have ensured that each star within does not collide with any of the others. To generate a route between the stars, I’ve implemented ‘prims algorithm’ to create a minimum spanning tree, so that it is possible for any star to be reached during pathfinding. In the application, I included the option to disable this, meaning there are pockets of stars that are disconnected from the main route, demonstrating that the A* pathfinding algorithm can detect when a route is unreachable.</p>
@@ -57,13 +57,13 @@
             <p>I implemented an A* pathfinding algorithm from scratch for this project. My approach involved using psuedo code to outline the general theory, and then convert that into the desired programming language, which in this case was C#. The algorithm can detect when a destination is impossible to reach, demonstrated in my project when the player selects a star that has no route connecting to it. I aslo created a 'pirate space' zone, where the costs of all routes existing in this space are multiplied, which shows how the algorithm can adapt and look for a route that avoids traveling through this, even if it means going a longer way around.</p>
         </div>
         <div class = "Image">
-            <img src = "img\ImagePlaceholder.png">
+            <img src = "img\StarMapNavigationImage2.png">
         </div>
     </section>
 
     <section class="ThirdSection">
         <div class = "Image">
-            <img src = "img\ImagePlaceholder.png">
+            <img src = "img\StarMapNavigationImage3.png">
         </div>
         <div class="Text">
             <p>I created a custom lerp library to move a space ship across the route selected by the player. To make the system more efficient, the types of lerps are stored as an enumeration, so it is more human-readable when choosing the desired lerp to trigger. I used an object-oriented aproach when designing the lerping function, and used polymorphism so that the same function can be called, and depending on the parameters passed in the results will vary. I also allowed the option to choose which aspect of an object is affected by the lerp, such as movement, rotation, color, and more</p>

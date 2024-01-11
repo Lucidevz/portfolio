@@ -45,7 +45,7 @@
 
     <section class="FirstSection">
         <div class = "Image">
-            <img src = "img\ImagePlaceholder.png">
+            <img src = "img\BoidsImage1.png">
         </div>
         <div class="Text">
             <p>I used all the standard principles of boid behaviour, developed by Craig Reynolds, to create a 3D artifitial life simulation. 'Alignment', 'Cohesion', and 'Seperation' are all used to allow a large amount of objects (my project uses space ships) to move together as a flock. I've expanded upon this by adding features such as teams, which makes all boids flock within seperate groups, 2 types of containment behaviour, and the option to visualise some of the calculations being performed, such as the boids direction of movement.</p>
@@ -57,16 +57,16 @@
             <p>I also looked into ways of increasing performance of the simulation, and added 3 optimisation techniques: Intermitent thinking, multi-threading and an oct-tree. For multi-threading, I had to find out how to use Unreal Engines built in C++ class for creating and handling threads. As actors cannot be modified outside of the main game thread, I came up with an approach to perform all the calculations for individual groups of boids within seperate threads. I then applied the found results inside of the main game thread, where it was safe to do so, once all of the other threads had finished.</p>
         </div>
         <div class = "Image">
-            <img src = "img\ImagePlaceholder.png">
+            <img src = "img\BoidsImage2.png">
         </div>
     </section>
 
     <section class="ThirdSection">
         <div class = "Image">
-            <img src = "img\ImagePlaceholder.png">
+            <img src = "img\BoidsImage3.png">
         </div>
         <div class="Text">
-            <p>For the oct-tree, I made a custom oct-tree class in C++ that allowed me to split up 3D space depending on how many boids were in a given area. I researched into the theory behind different types of spatial-partitioning used within games and simulations, and ended up finding the oct-tree to be the best choice for my needs. I noticed a large performance improvement after implementing this feature, and also added the option to visualise it, as shown in the photo opposite.</p>
+            <p>I researched into the theory behind different types of spatial-partitioning used within games and simulations, and ended up finding the oct-tree to be the best choice for my needs. I made a custom oct-tree class in C++ that allowed me to split up 3D space depending on how many boids were in a given area. The system is re-usable, as I ensured the node size, capacity, and objects to query could all be specified, and it also makes use of the standard classes built into the Unreal Engine. I noticed a large performance improvement after implementing this feature, and also added the option to visualise it, as shown in the photo opposite.</p>
         </div>
     </section>
 
