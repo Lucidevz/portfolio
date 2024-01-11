@@ -121,6 +121,8 @@ nav ul li a:hover{
 }
 .project{
     border-radius: 15px;
+    width: 384px;
+    height: 480px;
     position: relative;
     overflow: hidden;
 }
@@ -132,7 +134,7 @@ nav ul li a:hover{
 }
 
 .first-row img:hover{
-    transform:scale(1.15);
+    transform:scale(1.1);
 }
 .project:hover .layer{
     height: 100%;
