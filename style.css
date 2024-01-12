@@ -10,7 +10,7 @@ html{
 }
 
 body{
-    background: #457b9d;
+    background: #343a40;
 } 
 
 .start{
@@ -29,7 +29,7 @@ nav{
     padding-right: 15%;
 }
 .logo{
-    color: #f1faee;
+    color: #eab72d;
     font-size: 44px;
     letter-spacing: 1px;
 }
@@ -50,7 +50,7 @@ nav ul li a::after{
     content:'';
     width: 0;
     height:  3px;
-    background-color: #e63946;
+    background-color: #eab72d;
     position: absolute;
     left: 0;
     bottom: -5px;
@@ -60,7 +60,7 @@ nav ul li a:hover::after{
     width: 100%;
 }
 nav ul li a:hover{
-    color:#e63946;
+    color:#eab72d;
     transition: 0.25s;
 }
 
@@ -75,7 +75,7 @@ nav ul li a:hover{
     transform: translateY(-50%);
 }
 .content h1{
-    color: #f1faee;
+    color: #eab72d;
     margin: 20px 0px 10px;
     font-size: 85px;
     margin-bottom: 10px;
@@ -83,7 +83,7 @@ nav ul li a:hover{
 }
 .content h4{
     text-align: center;
-    color: #f1faee;
+    color: #eab72d;
     font-size: 25px;
     margin-bottom: 25px;
 }
@@ -98,7 +98,7 @@ nav ul li a:hover{
 /*--------Projects--------*/
 
 .projects-section{
-    background: #457b9d;
+    background: #343a40;
     width: 100%;
     padding: 50px, 0px;
 }
@@ -144,7 +144,7 @@ nav ul li a:hover{
     width: 100%;
     height: 550px;
     padding: 75px 0px;
-    background-color: #1d3557;
+    background-color: #212529;
     align-items: center;
 }
 .about-text{
@@ -167,7 +167,7 @@ nav ul li a:hover{
 }
 .about-text h5{
     text-align: center;
-    color: #f1faee;
+    color: #eab72d;
     letter-spacing: 2px;
     font-size: 22px;
     margin-bottom: 25px;
@@ -183,7 +183,7 @@ nav ul li a:hover{
 }
 
 .skills-section{
-    background-color: #457b9d;
+    background-color: #343a40;
     width: 100%;
     padding: 100px 0px;
 }
@@ -244,7 +244,7 @@ h5{
 .contact-section{
     width: 100%;
     height: 400px;
-    background: #1d3557;
+    background: #212529;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -263,7 +263,7 @@ footer{
     position: relative;
     width: 100%;
     height: 150px;
-    background: #457b9d;
+    background: #343a40;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -278,7 +278,7 @@ footer{
 }
 .end p{
     text-align: center;
-    color: #f1faee;
+    color: #eab72d;
     font-size: 18px;
 }
 .copyright i {
@@ -288,7 +288,7 @@ footer{
     align-items: center;
     justify-content: center;    
     margin: 22px 10px;
-    color: #f1faee;
+    color: #eab72d;
     text-decoration: none;
     font-size: 20px;
 }
@@ -339,10 +339,10 @@ footer{
     }
 
     .start nav ul{
-        background: #e63946;
+        background: #eab72d;
         position: fixed;
         top: 0;
-        right: -200px;
+        right: -300px;
         width: 45%;
         height: 100vh;
         padding-top: 50px;
@@ -409,7 +409,7 @@ footer{
 
     .end p{
         text-align: center;
-        color: #f1faee;
+        color: #eab72d;
         font-size: 16px;
     }
     .copyright i {
@@ -419,7 +419,7 @@ footer{
         align-items: center;
         justify-content: center;    
         margin: 22px 10px;
-        color: #f1faee;
+        color: #eab72d;
         text-decoration: none;
         font-size: 18px;
     }
@@ -430,7 +430,7 @@ footer{
         content:'';
         width: 0;
         height:  3px;
-        background-color: purple;
+        background-color: #f1faee;
         position: absolute;
         left: 0;
         bottom: -5px;
@@ -440,7 +440,7 @@ footer{
         width: 100%;
     }
     nav ul li a:hover{
-        color:purple;
+        color: #f1faee;
         transition: 0.25s;
     }
 
@@ -542,7 +542,7 @@ footer{
         position: relative;
         width: 100%;
         height: 100px;
-        background: #457b9d;
+        background: #343a40;
         flex-direction: column;
         align-items: center;
         justify-content: center;
