@@ -213,6 +213,71 @@ nav ul li a:hover{
 
 
 
+.FourthSection{
+    display: flex;
+}
+
+.FourthSection .Text{
+    margin: 15% 6%;
+    margin-right: 10px;
+    width: 45%;
+    align-items: center;
+}
+
+.FourthSection .Text p{
+    font-size: 20px;
+    padding: 0%;
+    margin: 15px auto;
+    color: #f1faee;
+}
+
+.FourthSection .Image{
+    display: flex;
+}
+
+.FourthSection .Image img{
+    margin: 30% 5%;
+    width: 640px;
+    height: 360px;
+}
+
+
+
+
+
+.FifthSection{
+    display: flex;
+    background-color: #343a40;
+}
+
+.FifthSection .Text{
+    margin: 15% 7%;
+    margin-right: 10px;
+    width: 45%;
+    align-items: center;
+}
+
+.FifthSection .Text p{
+    font-size: 20px;
+    padding: 0%;
+    margin: 15px auto;
+    color: #f1faee;
+}
+
+.FifthSection .Image{
+    display: flex;
+}
+
+.FifthSection .Image img{
+    margin: 30% 5%;
+    width: 640px;
+    height: 360px;
+}
+
+
+
+
+
 .start i{
     display: none;
 }
@@ -222,10 +287,6 @@ nav ul li a:hover{
 @media only screen and (max-width: 600px){
 
     .start{
-        height: 100vh;
-        width: 100%;
-        background-image: url(img/HomeBackgroundMobile.png);
-        background-size: cover;
         background-position: center;
     }
     .start .logo{
@@ -258,7 +319,7 @@ nav ul li a:hover{
     }
 
     .start nav ul{
-        background: #e63946;
+        background: #eab72d;
         position: fixed;
         top: 0;
         right: -300px;
@@ -287,5 +348,286 @@ nav ul li a:hover{
         top: 25px;
         right: 35px;
         cursor: pointer;
+    }
+
+        /* ----- Titles and Text : Hover effects ----- */
+
+        nav ul li a::after{
+            content:'';
+            width: 0;
+            height:  3px;
+            background-color: #f1faee;
+            position: absolute;
+            left: 0;
+            bottom: -5px;
+            transition: 0.25s;
+        }
+        nav ul li a:hover::after{
+            width: 100%;
+        }
+        nav ul li a:hover{
+            color: #f1faee;
+            transition: 0.25s;
+        }
+
+            /* ----- Sections ----- */
+
+    .Intro{
+        display: grid;
+        display: inline-block;
+        align-items: center;
+        width: 100%;
+        margin-top: 5px;
+    }
+        
+    .Intro .Text{
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+    }
+        
+    .Text h1{
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+        font-size: 48px;
+        color: #eab72d;
+        text-align: center;
+    }
+        
+    .Text p{
+        font-size: 18px;
+        color: #f1faee;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+        text-align: center;
+    }
+        
+    .Intro .Video{
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+        
+    .Video video{
+        margin-top: 5px;
+        margin-bottom: 15px;
+        width: 480px;
+        height: 240px;
+        cursor: pointer;
+    }
+        
+        
+        
+        
+        
+    .FirstSection{
+        display: grid;
+        display: inline-block;
+        align-items: center;
+        width: 100%;
+        margin-top: 5%;
+        background-color: #343a40;
+    }
+        
+    .FirstSection .Text{
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+    }
+        
+    .FirstSection .Text p{
+        margin-top: 5px;
+        font-size: 18px;
+        color: #f1faee;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+        text-align: center;
+    }
+        
+    .FirstSection .Image{
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+        
+    .FirstSection .Image img{
+        margin-top: 25px;
+        margin-bottom: 5px;
+        width: 480px;
+        height: 240px;
+    }
+        
+        
+        
+        
+        
+    .SecondSection{
+        display: grid;
+        display: inline-block;
+        align-items: center;
+        width: 100%;
+        margin-top: 5%;
+        background-color: #343a40;
+    }
+        
+    .SecondSection .Text{
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+    }
+        
+    .SecondSection .Text p{
+        margin-top: 5px;
+        margin-bottom: 5px;
+        font-size: 18px;
+        color: #f1faee;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+        text-align: center;
+    }
+        
+    .SecondSection .Image{
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+        
+    .SecondSection .Image img{
+        margin-top: 5px;
+        margin-bottom: 5px;
+        width: 480px;
+        height: 240px;
+    }
+
+
+
+
+
+    .ThirdSection{
+        display: grid;
+        display: inline-block;
+        align-items: center;
+        width: 100%;
+        margin-top: 5%;
+        background-color: #343a40;
+    }
+        
+    .ThirdSection .Text{
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+    }
+        
+    .ThirdSection .Text p{
+        margin-top: 5px;
+        margin-bottom: 5px;
+        font-size: 18px;
+        color: #f1faee;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+        text-align: center;
+    }
+        
+    .ThirdSection .Image{
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+        
+    .ThirdSection .Image img{
+        margin-top: 5px;
+        margin-bottom: 5px;
+        width: 480px;
+        height: 240px;
+    }
+        
+        
+        
+        
+        
+    .FourthSection{
+        display: grid;
+        display: inline-block;
+        align-items: center;
+        width: 100%;
+        margin-top: 5%;
+        background-color: #343a40;
+    }
+        
+    .FourthSection .Text{
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+    }
+        
+    .FourthSection .Text p{
+        margin-top: 5px;
+        margin-bottom: 5px;
+        font-size: 18px;
+        color: #f1faee;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+        text-align: center;
+    }
+        
+    .FourthSection .Image{
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+        
+    .FourthSection .Image img{
+        margin-top: 5px;
+        margin-bottom: 5px;
+        width: 480px;
+        height: 240px;
+    }
+
+
+
+
+    .FifthSection{
+        display: grid;
+        display: inline-block;
+        align-items: center;
+        width: 100%;
+        margin-top: 5%;
+        background-color: #343a40;
+    }
+        
+    .FifthSection .Text{
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+    }
+        
+    .FifthSection .Text p{
+        margin-top: 5px;
+        margin-bottom: 5px;
+        font-size: 18px;
+        color: #f1faee;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+        text-align: center;
+    }
+        
+    .FifthSection .Image{
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+        
+    .FifthSection .Image img{
+        margin-top: 5px;
+        margin-bottom: 5px;
+        width: 480px;
+        height: 240px;
     }
 }
