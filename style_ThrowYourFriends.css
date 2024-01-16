@@ -411,6 +411,7 @@ nav ul li a:hover{
     }
         
     .Intro .Text{
+        margin-bottom: 25px;
         margin-left: auto;
         margin-right: auto;
         width: 90%;
@@ -462,13 +463,14 @@ nav ul li a:hover{
     }
         
     .FirstSection .Text{
+        margin-top: 25px;
+        margin-bottom: 35px;
         margin-left: auto;
         margin-right: auto;
         width: 90%;
     }
         
     .FirstSection .Text p{
-        margin-top: 5px;
         font-size: 18px;
         color: #f1faee;
         margin-left: auto;
@@ -478,6 +480,7 @@ nav ul li a:hover{
     }
         
     .FirstSection .Image{
+        margin-bottom: 1px;
         margin-left: auto;
         margin-right: auto;
         width: 100%;
@@ -485,7 +488,7 @@ nav ul li a:hover{
         
     .FirstSection .Image img{
         margin-top: 25px;
-        margin-bottom: 5px;
+        margin-bottom: 1px;
         width: 480px;
         height: 240px;
     }
@@ -504,6 +507,8 @@ nav ul li a:hover{
     }
         
     .SecondSection .Text{
+        margin-top: 25px;
+        margin-bottom: 10px;
         margin-left: auto;
         margin-right: auto;
         width: 90%;
@@ -526,7 +531,7 @@ nav ul li a:hover{
         
     .SecondSection .Image img{
         margin-top: 5px;
-        margin-bottom: 5px;
+        margin-bottom: 25px;
         width: 480px;
         height: 240px;
     }
@@ -545,6 +550,8 @@ nav ul li a:hover{
     }
         
     .ThirdSection .Text{
+        margin-top: 25px;
+        margin-bottom: 35px;
         margin-left: auto;
         margin-right: auto;
         width: 90%;
@@ -566,7 +573,7 @@ nav ul li a:hover{
     }
         
     .ThirdSection .Image img{
-        margin-top: 5px;
+        margin-top: 25px;
         margin-bottom: 5px;
         width: 480px;
         height: 240px;
@@ -586,6 +593,8 @@ nav ul li a:hover{
     }
         
     .FourthSection .Text{
+        margin-top: 25px;
+        margin-bottom: 15px;
         margin-left: auto;
         margin-right: auto;
         width: 90%;
@@ -608,7 +617,7 @@ nav ul li a:hover{
         
     .FourthSection .Image img{
         margin-top: 5px;
-        margin-bottom: 5px;
+        margin-bottom: 35px;
         width: 480px;
         height: 240px;
     }
@@ -626,6 +635,8 @@ nav ul li a:hover{
     }
         
     .FifthSection .Text{
+        margin-top: 25px;
+        margin-bottom: 35px;
         margin-left: auto;
         margin-right: auto;
         width: 90%;
@@ -647,8 +658,8 @@ nav ul li a:hover{
     }
         
     .FifthSection .Image img{
-        margin-top: 5px;
-        margin-bottom: 5px;
+        margin-top: 25px;
+        margin-bottom: 1px;
         width: 480px;
         height: 240px;
     }
@@ -667,6 +678,8 @@ nav ul li a:hover{
     }
         
     .SixthSection .Text{
+        margin-top: 30px;
+        margin-bottom: 25px;
         margin-left: auto;
         margin-right: auto;
         width: 90%;
