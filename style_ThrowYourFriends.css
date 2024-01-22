@@ -110,7 +110,7 @@ nav ul li a:hover{
     width: 50%;
 }
 
-.Video img{
+.Video video{
     margin-right: 0%;
     width: 640px;
     height: 360px;
@@ -519,7 +519,7 @@ nav ul li a:hover{
         width: 100%;
     }
         
-    .Video img{
+    .Video video{
         margin-top: 5px;
         margin-bottom: 15px;
         width: 320px;
