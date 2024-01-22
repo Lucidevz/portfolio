@@ -491,7 +491,7 @@ nav ul li a:hover{
             margin-bottom: 25px;
             margin-left: auto;
             margin-right: auto;
-            width: 90%;
+            width: 95%;
             height: auto;
         }
             
@@ -507,9 +507,10 @@ nav ul li a:hover{
         .Text p{
             font-size: 18px;
             color: #f1faee;
+            margin-top: 10px;
             margin-left: auto;
             margin-right: auto;
-            width: 90%;
+            width: 95%;
             text-align: center;
         }
             
@@ -555,7 +556,7 @@ nav ul li a:hover{
             color: #f1faee;
             margin-left: auto;
             margin-right: auto;
-            width: 90%;
+            width: 95%;
             text-align: center;
         }
             
@@ -601,7 +602,7 @@ nav ul li a:hover{
             color: #f1faee;
             margin-left: auto;
             margin-right: auto;
-            width: 90%;
+            width: 95%;
             text-align: center;
         }
             
@@ -633,7 +634,7 @@ nav ul li a:hover{
         }
             
         .ThirdSection .Text{
-            margin-top: 25px;
+            margin-top: 15px;
             margin-bottom: 35px;
             margin-left: auto;
             margin-right: auto;
@@ -647,7 +648,7 @@ nav ul li a:hover{
             color: #f1faee;
             margin-left: auto;
             margin-right: auto;
-            width: 90%;
+            width: 95%;
             text-align: center;
         }
             
@@ -659,7 +660,7 @@ nav ul li a:hover{
             
         .ThirdSection .Image img{
             margin-top: 25px;
-            margin-bottom: 5px;
+            margin-bottom: 1px;
             width: 320px;
             height: 180px;
         }
@@ -692,7 +693,7 @@ nav ul li a:hover{
             color: #f1faee;
             margin-left: auto;
             margin-right: auto;
-            width: 90%;
+            width: 95%;
             text-align: center;
         }
             
@@ -736,7 +737,7 @@ nav ul li a:hover{
             color: #f1faee;
             margin-left: auto;
             margin-right: auto;
-            width: 90%;
+            width: 95%;
             text-align: center;
         }
             
@@ -751,50 +752,5 @@ nav ul li a:hover{
             margin-bottom: 1px;
             width: 320px;
             height: 180px;
-        }
-            
-            
-            
-            
-            
-        .SixthSection{
-            display: grid;
-            display: inline-block;
-            align-items: center;
-            width: 100%;
-            height: auto;
-            margin-top: 5%;
-            background-color: #343a40;
-        }
-            
-        .SixthSection .Text{
-            margin-top: 30px;
-            margin-bottom: 25px;
-            margin-left: auto;
-            margin-right: auto;
-            width: 90%;
-            height: auto;
-        }
-            
-        .SixthSection .Text p{
-            font-size: 18px;
-            color: #f1faee;
-            margin-left: auto;
-            margin-right: auto;
-            width: 90%;
-            text-align: center;
-        }
-            
-        .SixthSection .Image{
-            margin-left: auto;
-            margin-right: auto;
-            width: 100%;
-        }
-            
-        .SixthSection .Image img{
-            margin-top: 5px;
-            margin-bottom: 50px;
-            width: 320px;
-            height: 180px;
-        }
+        }                                                
     }
