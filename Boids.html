@@ -51,13 +51,13 @@
             <img src = "img\BoidsImage1.png">
         </div>
         <div class="Text">
-            <p>I used all the standard principles of boid behaviour, developed by Craig Reynolds, to create a 3D artifitial life simulation. 'Alignment', 'Cohesion', and 'Seperation' are all used to allow a large amount of objects (my project uses space ships) to move together as a flock. I've expanded upon this by adding features such as teams, which makes all boids flock within seperate groups, 2 types of containment behaviour, and the option to visualise some of the calculations being performed, such as the boids direction of movement.</p>
+            <p>I used all the standard principles of boid behaviour, developed by Craig Reynolds, to create a 3D artificial life simulation. 'Alignment', 'Cohesion', and 'Separation' are all used to allow a large amount of objects (my project uses space ships) to move together as a flock. I've expanded upon this by adding features such as teams, which makes all boids flock within separate groups, 2 types of containment behaviour, and the option to visualise some of the calculations being performed, such as the boids direction of movement.</p>
         </div>
     </section>
 
     <section class="SecondSection">
         <div class="Text">
-            <p>I also looked into ways of increasing performance of the simulation, and added 3 optimisation techniques: Intermitent thinking, multi-threading and an oct-tree. For multi-threading, I had to find out how to use Unreal Engines built in C++ class for creating and handling threads. As actors cannot be modified outside of the main game thread, I came up with an approach to perform all the calculations for individual groups of boids within seperate threads. I then applied the found results inside of the main game thread, where it was safe to do so, once all of the other threads had finished.</p>
+            <p>I also looked into ways of increasing performance of the simulation, and added 3 optimisation techniques: Intermittent thinking, multi-threading and an oct-tree. For multi-threading, I had to find out how to use Unreal Engines built in C++ class for creating and handling threads. As actors cannot be modified outside of the main game thread, I came up with an approach to perform all the calculations for individual groups of boids within separate threads. I then applied the found results inside of the main game thread, where it was safe to do so, once all of the other threads had finished. </p>
         </div>
         <div class = "Image">
             <img src = "img\BoidsImage2.png">
@@ -87,7 +87,7 @@
             <img src = "img\BoidsImage5.png">
         </div>
         <div class="Text">
-            <p>Additionally, I learned about unit testing, where I gained knowledge on how to test various aspects of a project, either on their own or working in conjunction with other systems, and document the result. At various stages of the projects life cycle, I reviewed the required mechanics, and anaylysed they're behaviour to tell they were performing as they were supposed to, if there was any issues, bugs to fix, and potential areas of improvement. This was valueable as it allowed me to assess my own work, and judge what could be done better, and if there was more efficient solutions to the ones I had originally came up with.</p>
+            <p>Additionally, I learned about unit testing, where I gained knowledge on how to test various aspects of a project, either on their own or working in conjunction with other systems, and document the result. At various stages of the projects life cycle, I reviewed the required mechanics, and analysed they're behaviour to tell they were performing as they were supposed to, if there was any issues, bugs to fix, and potential areas of improvement. This was valuable  as it allowed me to assess my own work, and judge what could be done better, and if there was more efficient solutions to the ones I had originally came up with.</p>
         </div>
     </section>
 
