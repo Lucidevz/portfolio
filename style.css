@@ -563,3 +563,186 @@ footer{
         align-items: center;
     }
 }
+
+/*---------------css for large screens-------------*/
+
+@media (min-width: 1921px) {
+    .logo{
+        font-size: 60px;
+    }
+    nav ul li{
+        list-style: none;
+        display: inline-block;
+        padding: 50px 50px;
+    }
+    nav ul li a{
+        font-size: 32px;
+    }
+
+
+
+    .content h1{
+        font-size: 120px;
+    }
+    .content h4{
+        font-size: 56px;
+    }
+    .content p{
+
+        font-size: 32px;
+        line-height: 48px;
+        margin-top: 35px;
+    }
+
+
+
+    .projects-title{
+        font-size: 120px;
+        margin: auto;
+        margin-top: 150px;
+        margin-bottom: 150px;
+        text-align: center;
+    }
+    .first-row{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        grid-gap: 5%;
+        margin-top: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 150px;
+    }
+    .project{
+        border-radius: 25px;
+        width: 576px;
+        height: 720px;
+    }
+
+
+
+    .about-section{
+        height: 900px;
+        background-color: #212529;
+        align-items: center;
+    }
+    .about-text{
+        width: 75%;
+    }
+    .main{
+        width: 90%;
+        max-width: 95%;
+    }
+    .about-text h2{
+        margin-top: 75px;
+        font-size: 120px;
+    }
+    .about-text h5{
+        letter-spacing: 3px;
+        font-size: 40px;
+        margin-bottom: 50px;
+    }
+    .about-text p{
+        line-height: 48px;
+        font-size: 32px;
+        margin-bottom: 200px;
+    }
+
+
+
+    .skills-section{
+        padding: 100px 0px;
+    }
+    .skills-section .title h2{
+        color: #f1faee;
+        font-size: 120px;
+        margin: 30px auto;
+        text-align: center;
+    }
+    .programming{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 300px;
+    }
+    .skill{
+        height: 150px;
+        padding: 15px 25px;
+        margin: 15px;
+        position: relative;
+        overflow: hidden;
+        text-align: center;
+    }
+    
+    h5{
+        color: #f1faee;
+        font-size: 32px;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+    .software{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 200px;
+    }
+    .skill{
+        height: 300px;
+        padding: 20px 50px;
+        margin: 25px;
+        position: relative;
+    }
+    .skill img{
+        height: 150px;
+        width: 150px;
+    }
+
+
+
+    .contact-section{
+        width: 100%;
+        height: 600px;
+    }
+    .contact-section h2{
+        font-size: 120px;
+    }
+    .contact-section h5{
+        color: #f1faee;
+        font-size: 40px;
+    }
+    
+
+
+    footer{
+        position: relative;
+        width: 100%;
+        height: 200px;
+        background: #343a40;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .end{
+        position: absolute;
+        font-size: 32px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .end p{
+        text-align: center;
+        color: #eab72d;
+        font-size: 32px;
+    }
+    .copyright i {
+        width: 10px;
+        height: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;    
+        margin: 60px 20px;
+        color: #eab72d;
+        font-size: 32px;
+    }
+}

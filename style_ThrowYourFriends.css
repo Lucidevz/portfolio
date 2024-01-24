@@ -800,3 +800,77 @@ nav ul li a:hover{
     }
 }
 
+
+
+
+
+/*---------------css for large screens-------------*/
+
+@media (min-width: 1279px) {
+    .Text h1{
+        font-size: 96px;
+    }
+
+    .Text p{
+        font-size: 28px;
+    }
+
+    .Video video{
+        width: 960px;
+        height: 540px;
+    }
+
+    .FirstSection .Text p{
+        font-size: 28px;
+    }
+
+    .FirstSection .Image img{
+        width: 960px;
+        height: 540px;
+    }
+
+    .SecondSection .Text p{
+        font-size: 28px;
+    }
+
+    .SecondSection .Image img{
+        width: 960px;
+        height: 540px;
+    }
+
+    .ThirdSection .Text p{
+        font-size: 28px;
+    }
+
+    .ThirdSection .Image img{
+        width: 960px;
+        height: 540px;
+    }
+
+    .FourthSection .Text p{
+        font-size: 28px;
+    }
+
+    .FourthSection .Image img{
+        width: 960px;
+        height: 540px;
+    }
+
+    .FifthSection .Text p{
+        font-size: 28px;
+    }
+
+    .FifthSection .Image img{
+        width: 960px;
+        height: 540px;
+    }
+
+    .SixthSection .Text p{
+        font-size: 28px;
+    }
+
+    .SixthSection .Image img{
+        width: 960px;
+        height: 540px;
+    }
+}
