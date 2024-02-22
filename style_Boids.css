@@ -100,6 +100,14 @@ nav ul li a:hover{
     color: #f1faee;
 }
 
+.Text .RepositoryLink{
+    padding-top: 12px;
+    font-size: 20px;
+    color: #eab72d;
+    text-decoration: underline;
+    text-decoration-color: #eab72d;
+}
+
 .Intro .Video{
     display: flex;
     justify-content: center;
