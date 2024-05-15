@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ThrowYourFriends</title>
+        <link rel="stylesheet" href="style_PhantomPaws.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+</html>
+
+<body>
+    <div class="start">
+        <nav>
+            <h2 class = "logo"> Luke Moseley</h2>
+            <ul id="sidemenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#skills">Skills</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+
+    </div>
+
+
+    <section class="Intro">
+            <div class="Text">
+                <h1>PHANTOM PAWS</h1>
+                <div class="line"></div>
+                <p>Phantom Paws was a 3rd person shooter game being developed by 6 master's degree students to be released on Steam and Nintendo Switch. During my second year of university, I had the opportunity to be interviewed by the team and get hired by them to work as a contract programmer for the project. I worked on some of the menus and UI elements in the game, as well as had the chance to look at how games are developed using a Nintendo Switch Development Kit. I worked with Unity and C# for this project.<br><br>(As the project contains sensitive Nintendo Switch SDK information, I cannot provide a link to the GitHub repository, but if you have any questions about the specific code files that I contributed towards this project, then feel free to contact me)</p>
+            </div>
+            <div class = "Video">
+                <video width="1920" height="1080" controls>
+                    <source src="videos\PhantomPawsVideoWalkthrough.mp4" type="video/mp4">
+                  Your browser does not support videos.
+                  </video>
+            </div>
+    </section>
+
+    <section class="FirstSection">
+        <div class = "Image">
+            <img src = "img\PhantomPawsImage1.png">
+        </div>
+        <div class="Text">
+            <p>My task working on this project was to create the pause and settings menu and UI features. I'd had previous experience making basic menus using Unity's UI system before, but this allowed me to look into it with a little bit more depth. When making the settings menu, to allow the changes made to affect the different aspects of the game, I learned about some features of Unity that I hadn't worked with before. For example, I looked at some of the properties that exist on a global volume, as well as how to access and change their values through code. I looked into scriptable objects, where I found out how they are used to define a template for containing data, and how to create new objects based on that template. And I also learned about the audio mixer asset, and how different channels and properties can be added to allow audio to be more organised within a project, and customised using variables. </p>
+        </div>
+    </section>
+
+    <section class="SecondSection">
+        <div class="Text">
+            <p>As the game was being developed for Nintendo Switch, I needed to implement a system that allowed the menu to be interacted with using a gamepad. I created a custom menu button script that could be attached to any UI element in the menu to define it as a button that could be interacted with using a gamepad. I then used a menu button handler to manage the collection of buttons that made up one menu. I learned about how to define and use unity events to create an event that causes an action to be triggered in response to gamepad input. As part of the manager script, I then created a suite of functions to control and interact with the menu, and then linked the appropriate ones up with the events on the buttons. I created a hover script to change the visual appearance of a button when it was currently 'highlighted' by a gamepad. Using object-oriented programming, I created deriving classes to change the visuals of different types of buttons (text-based ones, toggles, sliders etc...)</p>
+        </div>
+        <div class = "Image">
+            <img src = "img\PhantomPawsImage2.png">
+        </div>
+    </section>
+
+    <section class="ThirdSection">
+        <div class = "Image">
+            <img src = "img\PhantomPawsImage3.png">
+        </div>
+        <div class="Text">
+            <p>I got some practice at making reusable systems during this project, as although the systems I made needed to work for the pause / settings menu, they also needed to be reusable enough to apply to any type of menu in the game. This is where the event system came in use. As the events on buttons in different menus could be set up to call different functions, custom behaviour could be defined for separate menus. The functions that were part of manager script were made general enough that any menu could adapt to them. Later on in the project, the team created an in-game store and character customisation system, which required a menu so the player could interact with them. Using the systems that had been made, these were set up quickly and with ease, without the need to make any adjustments to the code, demonstrating that the code was modular.</p>
+        </div>
+    </section>
+
+    <section class="FourthSection">
+        <div class="Text">
+            <p>This assignment was the first time I'd joined a project mid-way through development. The process of being interviewed and 'hired' to work as a contractor for the master's team was to simulate what it's like to work in a game studio. The programmer for the team was our senior / mentor for the duration of the project, while I worked alongside 2 other contract programmers who were working on different parts of the game. This allowed me to gain experience working on a game that was already in development, so I got to learn how to read and understand somebody else's code base, and then use that as a template for adding new features that worked in conjunction with it. I learned some useful tips from our senior programmer, such as ways of structuring code files, using personal namespaces so developers could keep their own individual work separate from others, and some useful version control and management tips.</p>
+        </div>
+        <div class = "Image">
+            <img src = "img\PhantomPawsImage4.png">
+        </div>
+    </section>
+
+    <section class="FifthSection">
+        <div class = "Image">
+            <img src = "img\PhantomPawsImage5.png">
+        </div>
+        <div class="Text">
+            <p>I also got a chance to see how games are developed for the Nintendo Switch using a dev kit. This was a great experience because I gained a small amount of knowledge looking at how the dev kit worked, and the interface it used to present information about how the game was running on the platform. As I had to setup input for the menu systems, I looked at the code implemented by our senior programmer for Nintendo Switch input, and expanded on it so that the menus could work with the Switch joycons and pro controllers. It was interesting seeing how a Unity project had to be set up to work on the Nintendo Switch, as well as how to program specific features for the platform.</p>
+        </div>
+    </section>
+
+    <section class="SixthSection">
+        <div class="Text">
+            <p>As part of the master’s course, the team had the opportunity to exhibit their game at the insomnia gaming festival. As the contract workers had helped support the development of the game, we were invited to go along with them to showcase their project. This was a great experience as I found out what it's like for a development team to get a game prepared for an event, setting up a feedback system so that the team could receive the players thoughts on the game, and participating at a large scale convention, promoting the project and encouraging people to try it out and play it.</p>
+        </div>
+        <div class = "Image">
+            <img src = "img\PhantomPawsImage6.png">
+        </div>
+    </section>
+
+    <script>
+
+        var sidemenu = document.getElementById("sidemenu");
+    
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-300px";
+        }
+    
+    </script>
+</body>
